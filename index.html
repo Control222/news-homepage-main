@@ -1,60 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  The Bright Future of Web 3.0?
+    <script src="main.js" defer></script>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav__container">
+        <span class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </span>
+        <nav>
+          <ul class="nav__ul">
+            <li class="nav__link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">New</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Popular</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Trending</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="hamburger__menu">
+          <img
+            src="assets/images/icon-menu.svg"
+            alt="icon-menu"
+            id="icon__menu"
+          />
+          <img
+            src="assets/images/icon-menu-close.svg"
+            alt="icon-menu-close"
+            id="icon__menu__close"
+          />
+        </span>
+      </div>
+    </header>
 
-  Read more
+    <main>
+      <section class="main__article">
+        <div class="img__web__container"></div>
+        <div class="text">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="text__description">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="btn">READ MORE</button>
+          </div>
+        </div>
+      </section>
 
-  New 
+      <section class="news">
+        <h2>New</h2>
+        <div class="news__article">
+          <h3 class="news__h3">Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="news__article">
+          <h3 class="news__h3">The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="news__article">
+          <h3 class="news__h3">Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <section class="top__preview">
+        <div class="top__article">
+          <div class="top__img">
+            <img src="assets/images/image-retro-pcs.jpg" alt="retro-pc" />
+          </div>
+          <div class="description">
+            <p class="numb__top">01</p>
+            <h3 class="top__h3">Reviving Retro PCs</h3>
+            <p class="top__p">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="top__article">
+          <div class="top__img">
+            <img src="assets/images/image-top-laptops.jpg" alt="top-laptop" />
+          </div>
+          <div class="description">
+            <p class="numb__top">02</p>
+            <h3 class="top__h3">Top 10 Laptops of 2022</h3>
+            <p class="top__p">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="top__article">
+          <div class="top__img">
+            <img
+              src="assets/images/image-gaming-growth.jpg"
+              alt="gaming-growth"
+            />
+          </div>
+          <div class="description">
+            <p class="numb__top">03</p>
+            <h3 class="top__h3">The Growth of Gaming</h3>
+            <p class="top__p">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
